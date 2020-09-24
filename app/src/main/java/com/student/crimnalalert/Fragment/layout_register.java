@@ -285,7 +285,7 @@ public class layout_register extends Fragment {
             }
     }
     private  void MainIntent(){
-        Intent intent=new Intent(getActivity(),MainActivity.class);
+        Intent intent=new Intent(getActivity(), MainActivity.class);
         startActivity(intent);
         getActivity().finish();
 

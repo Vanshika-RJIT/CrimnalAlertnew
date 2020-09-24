@@ -55,6 +55,14 @@
         android:text="@string/common_signin_button_text"
         android:layout_height="wrap_content">
     </Button>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Go to Login Page"
+        android:id="@+id/go_login"
+        android:layout_height="wrap_content">
+    </TextView>
     <Button
         android:id="@+id/btnread"
         android:layout_width="wrap_content"

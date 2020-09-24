@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ public class layout_forgot extends Fragment {
     private Button ResetButton;
     private TextView GoBack;
     private FrameLayout frameLayout;
+    private LinearLayout linearLayout;
 
     private FirebaseAuth firebaseAuth;
 
@@ -42,6 +44,7 @@ public class layout_forgot extends Fragment {
         Email=v.findViewById(R.id.et_emailaddress);
         ResetButton=v.findViewById(R.id.btn_reset_forgot);
         GoBack=v.findViewById(R.id.tv_go_back);
+        linearLayout=v.findViewById(R.id.forgot_password_emailid_container);
 
         frameLayout=getActivity().findViewById(R.id.mainframeid);
 
@@ -90,7 +93,7 @@ public class layout_forgot extends Fragment {
 
                                 if(task.isSuccessful()){
                                     Email.setText("");
-                                    Toast.makeText(getActivity(), "sucessfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity(), "email send sucessfully", Toast.LENGTH_SHORT).show();
                                 }else {
                                     String error=task.getException().getMessage();
                                     Toast.makeText(getActivity(), ""+error, Toast.LENGTH_SHORT).show();

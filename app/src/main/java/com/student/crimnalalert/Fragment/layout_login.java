@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -101,7 +100,7 @@ public class layout_login extends Fragment {
     }
 
     private void MainIntent() {
-        Intent mainintent=new Intent(getActivity(),MainActivity.class);
+        Intent mainintent=new Intent(getActivity(), MainActivity.class);
         startActivity(mainintent);
         getActivity().finish();
     }

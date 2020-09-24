@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.api.Context;
 import com.google.firebase.database.DataSnapshot;
@@ -27,6 +29,7 @@ public class assign_signup extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     private DatabaseReference reference1;
     assign_userdatabasehelper helper;
+    TextView gologin;
 
     RecyclerView recyclerView;
     RecyclerView.LayoutManager manager;
@@ -38,6 +41,7 @@ public class assign_signup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assign_signup);
+
         name=findViewById(R.id.etname);
         phone=findViewById(R.id.etphone);
         email=findViewById(R.id.etemail);
@@ -45,6 +49,7 @@ public class assign_signup extends AppCompatActivity {
         password=findViewById(R.id.etpasswrd);
         signin=findViewById(R.id.btnsignin);
         read=findViewById(R.id.btnread);
+        gologin=findViewById(R.id.go_login);
 
         recyclerView=findViewById(R.id.recycler);
         manager=new LinearLayoutManager(assign_signup.this,RecyclerView.VERTICAL,false);
@@ -67,6 +72,15 @@ public class assign_signup extends AppCompatActivity {
             }
         });
 
+        gologin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(assign_signup.this,assign_login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
     }
 
@@ -83,8 +97,9 @@ public class assign_signup extends AppCompatActivity {
                     Log.e("Password", String.valueOf(as.get("password")));
 
                      helper=new assign_userdatabasehelper();
-                    helper.setEmail(""+as.get("password"));
-                    helper.setPassword(""+as.get("email"));
+
+                    helper.setEmail(""+as.get("email"));
+                    helper.setPassword(""+as.get("password"));
 
                     emailarray.add(helper);
 
