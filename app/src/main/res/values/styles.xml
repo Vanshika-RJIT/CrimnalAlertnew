@@ -74,6 +74,15 @@
     <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="color">@color/color_desire_font</item>
     </style>
+    
+<!--    <style name="threedots" parent="Widget.AppCompat.ActionBar">-->
+<!--        <item name="color">@color/color_desire_font</item>-->
+<!--    </style>-->
+
+    <style name="TODO" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorSecondary">@color/color_desire_font</item>
+    </style>
+
 
 
 </resources>
