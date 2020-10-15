@@ -7,6 +7,12 @@
     android:background="@color/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/fullmainid"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:ignore="InvalidId">-->
+<!--    </FrameLayout>-->
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

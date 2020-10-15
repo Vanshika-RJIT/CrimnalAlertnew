@@ -176,7 +176,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         ft.replace(R.id.mainpageid,fragment);
         ft.commit();
     }
-
+//    private void setfragmentfull(Fragment fragment) {
+//        FragmentManager fm=getSupportFragmentManager();
+//        FragmentTransaction ft=fm.beginTransaction();
+//        ft.replace(R.id.fullmainid,fragment);
+//        ft.commit();
+//    }
     @Override
     public void onBackPressed() {
 
