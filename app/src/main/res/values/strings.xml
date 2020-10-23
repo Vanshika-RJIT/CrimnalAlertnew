@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Criminal Alert</string>
     <string name="register">REGISTER</string>
     <string name="login_email_hint">Email</string>
@@ -35,4 +35,82 @@
     <string name="termAndCondition">Terms And Conditions</string>
 
     <string name="firRegister">FIR REGISTER</string>
+    <string name="ncrRegister"> NCR REGISTER</string>
+    <!--missing person  register 1-->
+    <string name="name">Name</string>
+    <string name="nameHint">Full Name</string>
+
+    <string name="noofPerson">No of Person</string>
+    <string name="noofPersonHint">At Least One Person</string>
+
+    <string name="Alias">Alias</string>
+    <string name="alias_hint">Alternative Name</string>
+
+    <string name="relative">Relative Name</string>
+    <string name="relative_hint">Relative Name</string>
+
+    <string name="relation">Relation</string>
+
+    <string name="address">Address</string>
+    <string name="address_hint">Address Hint</string>
+
+    <string name="gender">Gender</string>
+
+    <string name="yearofbirth">Year of Birth</string>
+    <string name="ageRange">Age Range</string>
+    <string name="ageHint">(Please enter either year of birth (4 digit )or age range of missing person)</string>
+
+    <string name="heightfrom">Height From</string>
+    <string name="heightto">Height To</string>
+
+    <string name="weight">Weight</string>
+    <string name="weight_hint">Weight in kg</string>
+
+    <string name="bodyType">Body Type</string>
+    <string name="complexion">Complexion</string>
+
+    <!--missing person  register 2 Incident Details-->
+    <string name="incidentdetails">Incident details</string>
+    <string name="incidentdetails_hint">Incident details</string>
+
+    <string name="incidentplace">Incident Place</string>
+    <string name="incidentplace_hint">Details Of Place Last Seen</string>
+
+    <string name="dateofincident">Date Of Incident</string>
+    <string name="dateofincident_hint">Click To Get Calender</string>
+
+    <string name="timeofincident">Time Of Incident</string>
+    <string name="timeofincident_hint">Click To Get Clock</string>
+
+    <!--missing person  register 3  Details od police station-->
+    <string name="policestation">Police Station(if known)</string>
+    <string name="district">Districtk</string>
+
+    <!--missing person  register 4  Missing Person Photo-->
+    <string name="missingpersonPhoto">Missing Person Photo(if available)</string>
+    <!--missing person  register 4  Informant Details-->
+    <string name="mobilenumber1">Mobile Number</string>
+    <string name="mobilenumber1Hinr">Mobile Number</string>
+    <string name="mobilenumber2">Mobile Number2/Landline Number</string>
+    <string name="mobilenumber2hint">Mobile Number2/Landline Number</string>
+    <string name="emailid">Email ID</string>
+    <string name="anyotherinfo">Any Other Information</string>
+    <string name="anyotherinfo_hint">Any Other Information</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="feet">Feet</string>
+    <string name="inch">Inch</string>
+    <string name="cm">Cm</string>
+
+    <!-- missing person search-->
+    <string name="missingpersonsearch">Missing Person Search</string>
+    <string name="missingdate">Missing Date</string>
+
+    <string name="fathername">Father Name</string>
+    <string name="end">End</string>
+    <string name="height">Height(feet,inch,cm)</string>
+    <string name="state">State</string>
+
+
 </resources>

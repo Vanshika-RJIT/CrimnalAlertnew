@@ -23,4 +23,7 @@
 
 <!--    <color name="toolbar_color">#3c4043</color>-->
     <color name="toolbar_color">#F8F5F5</color>
+    <!-- dots color-->
+    <color name="activedot">#96979b</color>
+    <color name="inactivedots">#00A5FF</color>
 </resources>

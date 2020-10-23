@@ -13,29 +13,32 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.student.crimnalalert.NCR_REGISTER.MissPersonReport;
 
-import java.util.ArrayList;
+//public class NavbarNcrAdapter {
+//}
 
-public class NavbarFirAdapter extends RecyclerView.Adapter<NavbarFirAdapter.ViewHolder> {
+public class NavbarNcrAdapter extends RecyclerView.Adapter<NavbarNcrAdapter.ViewHolder> {
+    private  View view;
 
-
-    Integer images[]={R.drawable.nav_childlabour,R.drawable.nav_child_marrige,
-            R.drawable.nav_domesticvoilence,R.drawable.nav_complain_lodge,
-            R.drawable.nav_cyberstalking,R.drawable.nav_sexualhassament};
-    String title[]={"Child Labour","Child Marriage","Domestic Voilence"
-            ,"Rape ","Stalking","Sexual Harrasment in public and private or a workplace" ,"Dowry System"};
+    Integer images[]={R.drawable.nav_missing_person,R.drawable.nav_missing_person_search,
+            R.drawable.nav_missingchildrensearch,R.drawable.nav_complain_lodge,R.drawable.nav_lost_found,R.drawable.nav_wanted};
+    String title[]={"missing person report","missing person search","missing children search","FIR LODGE","Lost&found","wanted"};
 
     @NonNull
     @Override
-    public NavbarFirAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.navbarfiradapter,parent,false);
+    public NavbarNcrAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    view= LayoutInflater.from(parent.getContext()).inflate(R.layout.navbarncradapter,parent,false);
         //View view=inflater.inflate(R.layout.activity_fir_register_adapter,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NavbarFirAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NavbarNcrAdapter.ViewHolder holder, int position) {
         holder.textView.setText(title[position]);
-       holder.imageView.setImageResource(images[position]);
+        holder.imageView.setImageResource(images[position]);
+
+        Intent intent=new Intent(view.getContext(),MissPersonReport.class);
+        view.getContext().startActivity(intent);
+
 
 
     }
@@ -57,10 +60,7 @@ public class NavbarFirAdapter extends RecyclerView.Adapter<NavbarFirAdapter.View
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(view.getContext(), "cliked" + getAdapterPosition(), Toast.LENGTH_SHORT).show();
-                    if(getAdapterPosition()==0){
 
-
-                    }
                 }
             });
         }
