@@ -12,14 +12,12 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-public class MissPersonReportAdapter extends PagerAdapter {
-    private  int layouts[];
+public class MissChildrenReportAdapter extends PagerAdapter {
+    private   int layouts[];
     private LayoutInflater layoutInflater;
     private Context context;
 
-
-
-    public MissPersonReportAdapter(int[] layouts, Context context) {
+    public MissChildrenReportAdapter(int[] layouts, Context context) {
         this.layouts = layouts;
         this.context = context;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

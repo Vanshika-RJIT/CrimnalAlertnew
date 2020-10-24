@@ -111,6 +111,23 @@
     <string name="end">End</string>
     <string name="height">Height(feet,inch,cm)</string>
     <string name="state">State</string>
+    <string name="missingchildrensearch">Missing Children Search</string>
+    <string name="missingchildrendetails">Missing Children Details</string>
+    <string name="complainantName">Complainant Name</string>
+    <string name="complainantaddress">Complainant Address</string>
+    <string name="complainantemail">Complainant Email</string>
+    <string name="complainantfather_mother"> Father/Mother Name</string>
+    <string name="complainantmobilenumber"> Mobile Number</string>
+    <string name="dateoflost">Date of Lost</string>
+    <string name="timeoflost">Time of Lost</string>
+    <string name="timeoflost_hint">Time of Lost(if known)</string>
+    <string name="placeoflost">Place of Lost</string>
+    <string name="lostarticles">Lost Articles</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Description(if any)</string>
+    <string name="submit">Submit</string>
+    <string name="foundarticles">Found Articles</string>
+    <string name="Filter">Filter</string>
 
 
 </resources>

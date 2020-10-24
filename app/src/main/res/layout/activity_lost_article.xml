@@ -45,7 +45,7 @@
                 <TextView
                     style="@style/headerText"
                     android:layout_gravity="center"
-                    android:text="@string/missingpersonsearch"
+                    android:text="@string/lostarticles"
                     />
 
                 <androidx.cardview.widget.CardView
@@ -64,61 +64,92 @@
                         android:orientation="vertical"
                         android:layout_margin="5dp"
                         android:layout_height="wrap_content">
-                        <LinearLayout
-                            android:layout_marginTop="5dp"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_weight="0.3"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:layout_gravity="center"
-                                android:textSize="@dimen/textsizeform"
-                                android:layout_width="wrap_content"
-                               android:text="@string/missingdate"
-                                android:layout_height="wrap_content">
-                            </TextView>
-                           <LinearLayout
-                               android:layout_weight="0.7"
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content">
-                               <EditText
-                                   android:layout_weight="0.2"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content">
-                               </EditText>
-                               <ImageButton
-                                   android:background="@null"
-                                   android:layout_weight="0.1"
-                                   android:layout_width="24dp"
-                                   android:layout_height="35dp"
-                                   android:src="@drawable/calender">
-                               </ImageButton>
-                               <TextView
-                                   android:layout_weight="0.1"
-                                   android:layout_gravity="center"
-                                   android:textSize="@dimen/textsizeform"
-                                   android:layout_width="wrap_content"
-                                   android:text="@string/to"
-                                   android:layout_height="wrap_content">
-                               </TextView>
-                               <EditText
-                                   android:layout_weight="0.2"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content">
-                               </EditText>
-                               <ImageButton
-                                   android:background="@null"
-                                   android:layout_weight="0.1"
-                                   android:layout_width="24dp"
-                                   android:layout_height="35dp"
-                                   android:src="@drawable/calender">
-                               </ImageButton>
-                           </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/textsizeform"
+                                android:layout_width="wrap_content"
+                                android:text="@string/complainantName"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/textsizeform"
+                                android:layout_width="wrap_content"
+                                android:text="@string/complainantemail"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/textsizeform"
+                                android:layout_width="wrap_content"
+                                android:text="@string/complainantmobilenumber"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/textsizeform"
+                                android:layout_width="wrap_content"
+                                android:text="@string/complainantfather_mother"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textSize="@dimen/textsizeform"
+                                android:layout_width="wrap_content"
+                                android:text="@string/placeoflost"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.2"
                             android:orientation="horizontal"
                             android:layout_height="wrap_content">
                             <TextView
@@ -126,159 +157,64 @@
                                 android:textSize="@dimen/textsizeform"
                                 android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:text="@string/name"
-                                android:layout_height="wrap_content">
-                            </TextView>
-                            <EditText
-                                android:layout_weight="0.8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-                            </EditText>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_marginTop="5dp"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:layout_gravity="center"
-                                android:textSize="@dimen/textsizeform"
-                                android:layout_weight="0.2"
-                                android:layout_width="wrap_content"
-                                android:text="@string/fathername"
-                                android:layout_height="wrap_content">
-                            </TextView>
-                            <EditText
-                                android:layout_weight="0.8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-                            </EditText>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_marginTop="5dp"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_weight="0.3"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:layout_gravity="center"
-                                android:textSize="@dimen/textsizeform"
-                                android:layout_width="wrap_content"
-                               android:text="@string/ageRange"
+                                android:text="@string/dateoflost"
                                 android:layout_height="wrap_content">
                             </TextView>
                             <LinearLayout
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.8"
                                 android:layout_width="wrap_content"
+                                android:orientation="horizontal"
                                 android:layout_height="wrap_content">
-                                <Spinner
-                                    android:textAlignment="center"
+                                <EditText
+                                    android:hint="@string/dateoflost"
+                                    android:layout_weight="0.6"
                                     android:layout_width="wrap_content"
-                                    android:layout_weight="0.3"
                                     android:layout_height="wrap_content">
-
-                                </Spinner>
-                                <TextView
-                                    android:layout_weight="0.1"
+                                </EditText>
+                                <ImageButton
                                     android:layout_gravity="center"
-                                    android:textSize="@dimen/textsizeform"
-                                    android:layout_width="wrap_content"
-                                    android:text="@string/to"
-                                    android:layout_height="wrap_content">
-                                </TextView>
-                                <Spinner
-                                    android:textAlignment="center"
-                                    android:layout_width="wrap_content"
-                                    android:layout_weight="0.3"
-                                    android:layout_height="wrap_content">
-
-                                </Spinner>
+                                    android:layout_weight="0.2"
+                                    android:background="@null"
+                                    android:layout_width="35dp"
+                                    android:src="@drawable/calender"
+                                    android:layout_height="35dp">
+                                </ImageButton>
                             </LinearLayout>
+
 
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_marginTop="5dp"
                             android:layout_width="match_parent"
                             android:orientation="horizontal"
-                            android:layout_weight="0.3"
                             android:layout_height="wrap_content">
                             <TextView
                                 android:layout_gravity="center"
                                 android:textSize="@dimen/textsizeform"
+                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:text="@string/height"
+                                android:text="@string/timeoflost"
                                 android:layout_height="wrap_content">
                             </TextView>
                             <LinearLayout
-                                android:layout_weight="0.7"
+                                android:layout_weight="0.8"
                                 android:layout_width="wrap_content"
+                                android:orientation="horizontal"
                                 android:layout_height="wrap_content">
-                                <Spinner
-                                    android:textAlignment="center"
+                                <EditText
+                                    android:hint="@string/timeoflost_hint"
+                                    android:layout_weight="0.6"
                                     android:layout_width="wrap_content"
-                                    android:layout_weight="0.3"
                                     android:layout_height="wrap_content">
-
-                                </Spinner>
-                                <TextView
-                                    android:layout_weight="0.1"
+                                </EditText>
+                                <ImageButton
                                     android:layout_gravity="center"
-                                    android:textSize="@dimen/textsizeform"
-                                    android:layout_width="wrap_content"
-                                    android:text="@string/end"
-                                    android:layout_height="wrap_content">
-                                </TextView>
-                                <Spinner
-                                    android:textAlignment="center"
-                                    android:layout_width="wrap_content"
-                                    android:layout_weight="0.3"
-                                    android:layout_height="wrap_content">
-
-                                </Spinner>
+                                    android:layout_weight="0.2"
+                                    android:background="@null"
+                                    android:layout_width="35dp"
+                                    android:src="@drawable/time"
+                                    android:layout_height="35dp">
+                                </ImageButton>
                             </LinearLayout>
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_marginTop="5dp"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:layout_gravity="center"
-                                android:textSize="@dimen/textsizeform"
-                                android:layout_weight="0.2"
-                                android:layout_width="wrap_content"
-                                android:text="@string/gender"
-                                android:layout_height="wrap_content">
-                            </TextView>
-                            <Spinner
-                                android:textAlignment="center"
-                                android:layout_width="wrap_content"
-                                android:layout_weight="0.8"
-                                android:layout_height="wrap_content">
-
-                            </Spinner>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_marginTop="5dp"
-                            android:layout_width="match_parent"
-                            android:orientation="horizontal"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:layout_gravity="center"
-                                android:textSize="@dimen/textsizeform"
-                                android:layout_weight="0.2"
-                                android:layout_width="wrap_content"
-                                android:text="@string/bodyType"
-                                android:layout_height="wrap_content">
-                            </TextView>
-                            <Spinner
-                                android:textAlignment="center"
-                                android:layout_width="wrap_content"
-                                android:layout_weight="0.8"
-                                android:layout_height="wrap_content">
-
-                            </Spinner>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -287,21 +223,23 @@
                             <TextView
                                 android:layout_gravity="center"
                                 android:textSize="@dimen/textsizeform"
-                                android:layout_weight="0.2"
                                 android:layout_width="wrap_content"
-                                android:text="@string/state"
+                                android:text="@string/lostarticles"
                                 android:layout_height="wrap_content">
                             </TextView>
                             <EditText
-                                android:hint="@string/state"
-                                android:layout_weight="0.8"
-                                android:layout_width="wrap_content"
+                                android:hint="@string/lostarticles"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
                             </EditText>
                         </LinearLayout>
+
+
+
                         <Button
+                            android:layout_marginTop="40dp"
                             android:layout_gravity="center"
-                            android:text="filter"
+                            android:text="@string/submit"
                             android:textStyle="bold"
                             android:background="@color/colorAccent"
                             android:textColor="@color/whiteTextColor"

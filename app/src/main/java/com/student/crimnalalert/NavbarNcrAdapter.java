@@ -11,7 +11,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.student.crimnalalert.NCR_REGISTER.LostArticle;
 import com.student.crimnalalert.NCR_REGISTER.MissPersonReport;
+import com.student.crimnalalert.NCR_REGISTER.MissingChildrenReport;
 
 //public class NavbarNcrAdapter {
 //}
@@ -36,8 +38,17 @@ public class NavbarNcrAdapter extends RecyclerView.Adapter<NavbarNcrAdapter.View
         holder.textView.setText(title[position]);
         holder.imageView.setImageResource(images[position]);
 
-        Intent intent=new Intent(view.getContext(),MissPersonReport.class);
-        view.getContext().startActivity(intent);
+       if( holder.getAdapterPosition()==0) {
+           Intent intent = new Intent(view.getContext(), MissPersonReport.class);
+           view.getContext().startActivity(intent);
+       }else if( holder.getAdapterPosition()==3){
+           Intent intent1 = new Intent(view.getContext(), MissingChildrenReport.class);
+           view.getContext().startActivity(intent1);
+       }
+       else if( holder.getAdapterPosition()==4){
+           Intent intent1 = new Intent(view.getContext(), LostArticle.class);
+           view.getContext().startActivity(intent1);
+       }
 
 
 
