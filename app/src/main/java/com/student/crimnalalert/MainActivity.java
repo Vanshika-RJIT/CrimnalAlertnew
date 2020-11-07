@@ -2,7 +2,6 @@ package com.student.crimnalalert;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.MenuItem;
@@ -12,8 +11,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 import com.student.crimnalalert.Fragment.Navbar_CRIMINALRATE;
 import com.student.crimnalalert.Fragment.Navbar_FEEDBACK;
@@ -21,7 +18,8 @@ import com.student.crimnalalert.Fragment.Navbar_FIR;
 import com.student.crimnalalert.Fragment.Navbar_NCR;
 import com.student.crimnalalert.Fragment.Navbar_SETTINGPRIVACY;
 import com.student.crimnalalert.Fragment.Navbar_TERMSCONDTION;
-import com.student.crimnalalert.Fragment.Navbar_ZEROFIR;
+import com.student.crimnalalert.Fragment.Navbar_VIEWREPORT;
+import com.student.crimnalalert.Fragment.Navbar_WANTED;
 import com.student.crimnalalert.Fragment.layout_GUIDE;
 import com.student.crimnalalert.Fragment.layout_HOME;
 import com.student.crimnalalert.Fragment.layout_PREMIUM;
@@ -34,10 +32,6 @@ import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -140,9 +134,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 Toast.makeText(MainActivity.this,"NCR",Toast.LENGTH_SHORT).show();
                 drawer.closeDrawers();
                 break;
-            case R.id.nav_zerofir_id:
-                setfragment(new Navbar_ZEROFIR());
-                Toast.makeText(MainActivity.this,"ZERO-NCR",Toast.LENGTH_SHORT).show();
+            case R.id.nav_wanted_id:
+                setfragment(new Navbar_WANTED());
+                Toast.makeText(MainActivity.this,"Wanted",Toast.LENGTH_SHORT).show();
+                drawer.closeDrawers();
+                break;
+            case R.id.nav_viewreport_id:
+                setfragment(new Navbar_VIEWREPORT());
+                Toast.makeText(MainActivity.this,"View Reports",Toast.LENGTH_SHORT).show();
                 drawer.closeDrawers();
                 break;
             case R.id.nav_criminalrate_id:

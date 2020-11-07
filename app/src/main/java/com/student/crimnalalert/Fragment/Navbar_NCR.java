@@ -35,4 +35,5 @@ public class Navbar_NCR extends Fragment {
 
         return v;
     }
+
 }

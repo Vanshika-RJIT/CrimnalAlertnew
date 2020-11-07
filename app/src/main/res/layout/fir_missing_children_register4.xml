@@ -49,6 +49,8 @@
                     />
 
                 <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
                     style="@style/loginCard"
                     app:cardCornerRadius="10dp"
                     android:elevation="5dp"
@@ -205,6 +207,18 @@
                                 android:layout_height="wrap_content">
                             </EditText>
                         </LinearLayout>
+                        <Button
+                            android:enabled="true"
+                            android:id="@+id/finish"
+                            android:layout_width="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:layout_gravity="end"
+                            android:textStyle="bold"
+                            android:textColor="@color/whiteCardColor"
+                            android:text="FINISH"
+                            android:layout_height="wrap_content">
+                        </Button>
+
 
 
 

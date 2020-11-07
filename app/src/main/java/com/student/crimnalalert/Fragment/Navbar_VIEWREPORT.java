@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.student.crimnalalert.R;
 
-public class Navbar_ZEROFIR extends Fragment {
+public class Navbar_VIEWREPORT extends Fragment {
 
     View v;
 
@@ -20,7 +20,7 @@ public class Navbar_ZEROFIR extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        v=inflater.inflate(R.layout.activity_navbar__z_e_r_o_f_i_r,container,false);
+        v=inflater.inflate(R.layout.activity_navbar__v_i_e_w_r_e_p_o_r_t,container,false);
         return v;
     }
 }

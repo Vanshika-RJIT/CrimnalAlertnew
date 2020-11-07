@@ -124,13 +124,13 @@
                                     android:layout_width="@dimen/formlayoutwidth"
                                     android:layout_height="wrap_content">
                                 </TextView>
-                                <androidx.appcompat.widget.AppCompatSpinner
+                                <Spinner
                                     android:id="@+id/spinnerrelation"
                                     android:textSize="@dimen/textsizeform"
                                     android:layout_width="match_parent"
                                     android:layout_weight="1"
                                     android:layout_height="wrap_content">
-                                </androidx.appcompat.widget.AppCompatSpinner>
+                                </Spinner>
 
                             </LinearLayout>
                             <LinearLayout
@@ -188,8 +188,9 @@
                                     android:layout_height="wrap_content">
                                 </TextView>
                                 <EditText
+                                    android:drawableRight="@drawable/calender"
                                     android:maxLines="1"
-                                    android:inputType="number"
+                                    android:inputType="date"
                                     android:id="@+id/MDPreg1yearofbirth"
                                     android:textSize="@dimen/textsizeform"
                                     android:hint="@string/yearofbirth"
@@ -362,6 +363,15 @@
                               </androidx.appcompat.widget.AppCompatSpinner>
 
                             </LinearLayout>
+                            <Button
+                                android:enabled="false"
+                                android:id="@+id/firstnext"
+                                android:layout_width="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:layout_gravity="end"
+                                android:text="Next"
+                                android:layout_height="wrap_content">
+                            </Button>
 
                         </LinearLayout>
 

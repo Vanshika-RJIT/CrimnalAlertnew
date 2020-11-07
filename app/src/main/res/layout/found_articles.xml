@@ -178,6 +178,7 @@
                             android:layout_marginTop="40dp"
                             android:layout_gravity="center"
                             android:text="@string/Filter"
+                            android:id="@+id/filter"
                             android:textStyle="bold"
                             android:background="@color/colorAccent"
                             android:textColor="@color/whiteTextColor"
